@@ -6,6 +6,10 @@ linkedin: https://www.linkedin.com/in/alexphillipyoung
 twitter: https://twitter.com/alexpyoung
 instagram: https://www.instagram.com/alexpyoung
 
+photos:
+    - photo: /assets/photos/DSC02116-HDR.jpg
+    - photo: /assets/photos/DSC02466-HDR.jpg
+
 markdown: kramdown
 theme: minima
 sass:
