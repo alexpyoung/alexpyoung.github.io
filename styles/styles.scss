@@ -28,6 +28,15 @@ h2 {
     text-transform: uppercase;
 }
 
+a {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
 nav {
     display: flex;
     flex-direction: column;
@@ -35,22 +44,12 @@ nav {
     justify-content: space-between;
     width: 100%;
 
-    a {
-        color: $text-color;
-        text-decoration: none;
-
-        &:hover {
-            opacity: 0.7;
-        }
-    }
-
     h1 {
         display: inline-block;
         padding: 1rem 0;
     }
 
     ul {
-        list-style-type: none;
         text-align: center;
     }
 
@@ -80,7 +79,6 @@ nav {
 
     ul {
         display: inline-block;
-        list-style-type: none;
     }
 
     li {
@@ -132,5 +130,14 @@ nav {
 @media (min-width: $lg-screen) {
     .hero {
         height: 70%;
+    }
+}
+
+.about {
+    margin: auto 0;
+    font-size: 3em;
+
+    li {
+        padding: 20px;
     }
 }
