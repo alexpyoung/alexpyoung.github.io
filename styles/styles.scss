@@ -3,9 +3,16 @@
 
 @import 'overrides';
 
-$mobile-breakpoint: 640px;
+$md-screen: 640px;
+$lg-screen: 960px;
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 2rem;
     color: #303030;
 }
 
@@ -25,11 +32,11 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    width: 100%;
 
     h1 {
         display: inline-block;
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
 
     ul {
@@ -43,9 +50,9 @@ nav {
 }
 
 .hero {
-    height: 70%;
-    width: 80%;
+    height: 50%;
     margin: 0 auto;
+    padding: 1rem 0;
 
     img {
         height: 100%;
@@ -59,6 +66,7 @@ nav {
     padding: 20px 0;
     overflow: auto;
     white-space: nowrap;
+    width: 100%;
 
     ul {
         display: inline-block;
@@ -68,6 +76,14 @@ nav {
     li {
         display: inline-block;
         padding: 0 5px;
+
+        &:first-of-type {
+            padding-left: 0;
+        }
+
+        &:last-of-type {
+            padding-right: 0;
+        }
     }
 
     img {
@@ -77,7 +93,14 @@ nav {
     }
 }
 
-@media (min-width: $mobile-breakpoint) {
+@media (min-width: $md-screen) {
+    nav h1 {
+        padding: 2rem 0;
+    }
+
+    .hero {
+        height: 60%;
+    }
 
     h1 {
         font-size: 2rem;
@@ -96,3 +119,8 @@ nav {
     }
 }
 
+@media (min-width: $lg-screen) {
+    .hero {
+        height: 70%;
+    }
+}
