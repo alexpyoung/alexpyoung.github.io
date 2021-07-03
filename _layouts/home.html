@@ -1,21 +1,18 @@
 <html>
     {% include head.html %}
 
-    <body class="root">
-        <div class="content">
-            <img class="avatar" src="/assets/avatar.jpg" />
-            <h1>Hi, I'm Alex Young</h1>
-            <div class="links">
-                <a href="mailto:{{ site.email }}" target="blank">
-                    <img class="link" src="/assets/email.svg" />
-                </a>
-                <a href="{{ site.linkedin }}" target="blank">
-                    <img class="link" src="/assets/linkedin.svg" />
-                </a>
-                <a href="{{ site.github }}" target="blank">
-                    <img class="link" src="/assets/github.svg" />
-                </a>
-            </div>
+    <body>
+        {% include nav.html %}
+        <div class="hero">
+            <img src="{{ site.photos.first.photo }}"/>
+        </div>
+        <div class="carousel">
+            <ul>
+                {% for item in site.photos %}
+                <li onclick="onSelectImage(this)"><img src="{{ item.photo }}"/></li>
+                {% endfor %}
+            </ul>
         </div>
     </body>
+    <script src="/scripts/images.js" async></script>
 </html>

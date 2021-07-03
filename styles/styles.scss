@@ -3,70 +3,96 @@
 
 @import 'overrides';
 
-$non-mobile: 500px;
-$spacing: 50px;
-$icon-size: 40px;
+$mobile-breakpoint: 640px;
 
 body {
-    font-family: 'Roboto Slab', serif;
     color: #303030;
 }
 
 h1 {
-    font-size: 9vw;
-    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 7vw;
+}
 
-    @media (min-width: 375px) {
-        font-size: 2em;
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 4vw;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+
+    h1 {
+        display: inline-block;
+        padding: 2rem 0;
+    }
+
+    ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    li {
+        padding: 0.5rem 1rem;
     }
 }
 
-.root {
-    display: grid;
-    grid-template-columns: auto 80% auto;
-    align-items: start;
-    justify-items: center;
-    width: 100vw;
-    background-color: #EFEFEF;
+.hero {
+    height: 70%;
+    width: 80%;
+    margin: 0 auto;
 
-    @media (min-width: $non-mobile) {
-        align-items: center;
-        height: 100vh;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
     }
 }
 
-.content {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    display: grid;
-    grid-row-gap: $spacing;
-    grid-template-rows: auto 50px;
-    place-items: center;
-    margin-top: $spacing;
+.carousel {
+    text-align: center;
+    padding: 20px 0;
+    overflow: auto;
+    white-space: nowrap;
 
-    @media (min-width: $non-mobile) {
-        margin-top: 0px;
+    ul {
+        display: inline-block;
+        list-style-type: none;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0 5px;
+    }
+
+    img {
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
     }
 }
 
-.avatar {
-    width: 100%;
-    max-width: 280px;
-    border-radius: 50%;
-}
+@media (min-width: $mobile-breakpoint) {
 
+    h1 {
+        font-size: 2rem;
+    }
 
-.links {
-    display: grid;
-    grid-auto-flow: column;
-    grid-column-gap: 4vh;
+    h2 {
+        font-size: 1rem;
+    }
 
-    @media (min-width: $non-mobile) {
-        grid-column-gap: $icon-size;
+    nav {
+        flex-direction: row;
+    }
+
+    ul, li {
+        display: inline-block;
     }
 }
 
-.link {
-    height: $icon-size;
-    width: $icon-size;
-}
