@@ -9,7 +9,9 @@
         <div class="carousel">
             <ul>
                 {% for item in site.photos %}
-                <li onclick="onSelectImage(this)"><img src="{{ item.photo }}"/></li>
+                <li onclick="onSelectImage(this)">
+                    <img src="{{ item.photo }}" loading="lazy"/>
+                </li>
                 {% endfor %}
             </ul>
         </div>
