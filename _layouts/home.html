@@ -4,13 +4,13 @@
     <body>
         {% include nav.html %}
         <div class="hero">
-            <img src="{{ site.photos.first.photo }}"/>
+            <img src="{{ site.photos.first }}"/>
         </div>
         <div class="carousel">
             <ul>
-                {% for item in site.photos %}
+                {% for photo in site.photos %}
                 <li onclick="onSelectImage(this)">
-                    <img src="{{ item.photo }}" loading="lazy"/>
+                    <img src="{{ photo }}" loading="lazy"/>
                 </li>
                 {% endfor %}
             </ul>

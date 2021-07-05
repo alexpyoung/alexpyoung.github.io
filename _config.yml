@@ -1,28 +1,39 @@
 title: Alex Young
 
-email: alexphillipyoung@gmail.com
-github: https://github.com/alexpyoung
-linkedin: https://www.linkedin.com/in/alexphillipyoung
-twitter: https://twitter.com/alexpyoung
-instagram: https://www.instagram.com/alexpyoung
+nav:
+    - title: Home
+      href: /
+    - title: About
+      href: /about
+
+links:
+    - href: https://www.instagram.com/alexpyoung
+      src: /assets/instagram.svg
+    - href: https://www.linkedin.com/in/alexphillipyoung
+      src: /assets/linkedin.svg
+    - href: https://github.com/alexpyoung
+      src: /assets/github.svg
+    - href: mailto:alexphillipyoung@gmail.com
+      src: /assets/email.svg
 
 photos:
-    - photo: /assets/photos/HalfDome1.jpg
-    - photo: /assets/photos/LimekilnCreekBridge.jpg
-    - photo: /assets/photos/Brian.jpg
-    - photo: /assets/photos/WTC.JPG
-    - photo: /assets/photos/JudasTree.jpg
-    - photo: /assets/photos/HalfDome0.jpg
-    - photo: /assets/photos/Malecon.jpg
-    - photo: /assets/photos/Sarah.jpg
-    - photo: /assets/photos/PfiefferBeach.jpg
-    - photo: /assets/photos/Roscoe.jpg
-    - photo: /assets/photos/KipsBay.jpg
-    - photo: /assets/photos/Bee.jpg
-    - photo: /assets/photos/Trinidad.jpg
-    - photo: /assets/photos/Rain.jpg
-    - photo: /assets/photos/Matt.jpg
-    - photo: /assets/photos/PuentedeBacunayagua.jpg
+    - /assets/photos/HalfDome1.jpg
+    - /assets/photos/LimekilnCreekBridge.jpg
+    - /assets/photos/Brian.jpg
+    - /assets/photos/JudasTree.jpg
+    - /assets/photos/NanLien.jpg
+    - /assets/photos/WTC.JPG
+    - /assets/photos/HalfDome0.jpg
+    - /assets/photos/Malecon.jpg
+    - /assets/photos/Sarah.jpg
+    - /assets/photos/Roscoe.jpg
+    - /assets/photos/KipsBay.jpg
+    - /assets/photos/Bee.jpg
+    - /assets/photos/Trinidad.jpg
+    - /assets/photos/Rain.jpg
+    - /assets/photos/PfiefferBeach.jpg
+    - /assets/photos/Matt.jpg
+    - /assets/photos/PuentedeBacunayagua.jpg
 
 markdown: kramdown
 theme: minima

@@ -1,8 +1,9 @@
 <nav>
-    <h1><a href="/">alex young</a></h1>
+    <h1><a href="/">{{ site.title }}</a></h1>
     <ul>
-        <li><h2><a href="/">home</a></h2></li>
-        <li><h2><a href="/about">about</a></h2></li>
+        {% for item in site.nav %}
+        <li><h2><a href="{{ item.href }}">{{ item.title }}</a></h2></li>
+        {% endfor %}
     </ul>
 </nav>
 

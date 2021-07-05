@@ -4,13 +4,17 @@
     <body>
         {% include nav.html %}
         <div class="about">
-            <img class="avatar" src="/assets/avatar.jpg" />
-            <ul>
-                <li><a href="mailto:{{ site.email }}" target="blank">📫</a></li>
-                <li><a href="{{ site.github }}" target="blank">💻</a></li>
-                <li><a href="{{ site.linkedin }}" target="blank">👔</a></li>
-                <li><a href="{{ site.instagram }}" target="blank">📸</a></li>
-            </ul>
+            <div class="bio">
+                <img src="/assets/avatar.jpg" />
+                <p>Never half-ass two things.<br>Whole-ass one thing.</p>
+            </div>
+            <div class="links">
+                {% for link in site.links %}
+                <a href="{{ link.href }}" target="blank">
+                    <img class="link" src="{{ link.src }}" />
+                </a>
+                {% endfor %}
+            </div>
         </div>
     </body>
     <script src="/scripts/images.js" async></script>
