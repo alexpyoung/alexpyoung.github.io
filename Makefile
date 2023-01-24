@@ -1,5 +1,4 @@
-VERSION=3.8
-IMAGE=jekyll/jekyll:${VERSION}
+IMAGE=jekyll/jekyll:stable
 NAME=alexpyoung.github.io
 SRC=`pwd`
 HOST_PORT=4000
