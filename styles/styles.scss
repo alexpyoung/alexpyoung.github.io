@@ -5,7 +5,8 @@
 
 $md-screen: 640px;
 $lg-screen: 960px;
-$text-color: #303030;
+$text-color: #1F1F1F;
+$bg-color: #EEEEEE;
 $icon-size: 1.8rem;
 
 body {
@@ -16,6 +17,31 @@ body {
     height: 100%;
     padding: 0 2rem;
     color: $text-color;
+    background-color: $bg-color;
+}
+
+a {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: $bg-color;
+    background-color: $text-color;
+  }
+
+  a {
+    color: $bg-color;
+  }
+
+  .link {
+    filter: invert(1);
+  }
 }
 
 h1 {
@@ -27,15 +53,6 @@ h2 {
     font-family: 'Roboto Slab', serif;
     font-size: 4vw;
     text-transform: uppercase;
-}
-
-a {
-    color: $text-color;
-    text-decoration: none;
-
-    &:hover {
-        opacity: 0.7;
-    }
 }
 
 nav {
