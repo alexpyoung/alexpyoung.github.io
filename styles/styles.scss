@@ -76,12 +76,16 @@ hr {
     }
 }
 
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+}
+
 .carousel {
     text-align: center;
-    padding: 2rem 0;
+    margin: 2rem 0;
     overflow: auto;
     white-space: nowrap;
-    width: 100%;
 
     ul {
         display: inline-block;
