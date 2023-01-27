@@ -1,12 +1,12 @@
 ---
 ---
 
-@import 'overrides';
+@import "overrides";
 
 $md-screen: 640px;
 $lg-screen: 960px;
-$text-color: #1F1F1F;
-$bg-color: #EEEEEE;
+$text-color: #1f1f1f;
+$bg-color: #eeeeee;
 $icon-size: 1.8rem;
 
 body {
@@ -30,27 +30,27 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    color: $bg-color;
-    background-color: $text-color;
-  }
+    body {
+        color: $bg-color;
+        background-color: $text-color;
+    }
 
-  a {
-    color: $bg-color;
-  }
+    a {
+        color: $bg-color;
+    }
 
-  .link {
-    filter: invert(1);
-  }
+    .link {
+        filter: invert(1);
+    }
 }
 
 h1 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-size: 7vw;
 }
 
 h2 {
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     font-size: 4vw;
     text-transform: uppercase;
 }
@@ -160,7 +160,8 @@ hr {
         flex-direction: row;
     }
 
-    ul, li {
+    ul,
+    li {
         display: inline-block;
     }
 }
@@ -191,7 +192,7 @@ hr {
     }
 
     p {
-        font-family: 'Merriweather Sans', sans-serif;
+        font-family: "Merriweather Sans", sans-serif;
         font-style: italic;
         font-size: 1em;
         text-align: center;
