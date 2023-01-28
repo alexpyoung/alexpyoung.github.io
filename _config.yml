@@ -17,27 +17,27 @@ links:
       src: /assets/email.svg
 
 photos:
-    - /assets/photos/HalfDome1.jpg
-    - /assets/photos/SandDunes.jpg
-    - /assets/photos/LimekilnCreekBridge.jpg
-    - /assets/photos/Brian.jpg
-    - /assets/photos/JudasTree.jpg
-    - /assets/photos/Polygons.jpg
-    - /assets/photos/TenSleep.jpg
-    - /assets/photos/NanLien.jpg
-    - /assets/photos/HalfDome0.jpg
-    - /assets/photos/Roscoe.jpg
-    - /assets/photos/Malecon.jpg
-    - /assets/photos/Sarah.jpg
-    - /assets/photos/KipsBay.jpg
-    - /assets/photos/Tetons.jpg
-    - /assets/photos/Bee.jpg
-    - /assets/photos/Trinidad.jpg
-    - /assets/photos/PfiefferBeach.jpg
-    - /assets/photos/PuentedeBacunayagua.jpg
-    - /assets/photos/Rain.jpg
-    - /assets/photos/Matt.jpg
-    - /assets/photos/WTC.JPG
+    - /assets/photos/HalfDome1.jpeg
+    - /assets/photos/SandDunes.jpeg
+    - /assets/photos/LimekilnCreekBridge.jpeg
+    - /assets/photos/Brian.jpeg
+    - /assets/photos/JudasTree.jpeg
+    - /assets/photos/Polygons.jpeg
+    - /assets/photos/TenSleep.jpeg
+    - /assets/photos/NanLien.jpeg
+    - /assets/photos/HalfDome0.jpeg
+    - /assets/photos/Roscoe.jpeg
+    - /assets/photos/Malecon.jpeg
+    - /assets/photos/Sarah.jpeg
+    - /assets/photos/KipsBay.jpeg
+    - /assets/photos/Tetons.jpeg
+    - /assets/photos/Bee.jpeg
+    - /assets/photos/Trinidad.jpeg
+    - /assets/photos/PfiefferBeach.jpeg
+    - /assets/photos/PuentedeBacunayagua.jpeg
+    - /assets/photos/Rain.jpeg
+    - /assets/photos/Matt.jpeg
+    - /assets/photos/WTC.jpeg
 
 markdown: kramdown
 theme: minima
