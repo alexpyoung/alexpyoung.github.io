@@ -17,9 +17,11 @@ links:
       src: /assets/email.svg
 
 photos:
+    - /assets/photos/Trinidad.jpeg
     - /assets/photos/HalfDome1.jpeg
     - /assets/photos/SandDunes.jpeg
     - /assets/photos/LimekilnCreekBridge.jpeg
+    - /assets/photos/Glacier.jpeg
     - /assets/photos/Brian.jpeg
     - /assets/photos/JudasTree.jpeg
     - /assets/photos/Polygons.jpeg
@@ -32,7 +34,6 @@ photos:
     - /assets/photos/KipsBay.jpeg
     - /assets/photos/Tetons.jpeg
     - /assets/photos/Bee.jpeg
-    - /assets/photos/Trinidad.jpeg
     - /assets/photos/PfiefferBeach.jpeg
     - /assets/photos/PuentedeBacunayagua.jpeg
     - /assets/photos/Rain.jpeg
