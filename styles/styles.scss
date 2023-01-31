@@ -192,9 +192,7 @@ hr {
     }
 
     p {
-        font-family: "Merriweather Sans", sans-serif;
-        font-style: italic;
-        font-size: 1em;
+        font-size: 2em;
         text-align: center;
         padding-top: 3vh;
     }
@@ -212,4 +210,11 @@ hr {
 .link {
     height: $icon-size;
     width: $icon-size;
+}
+
+.not-found {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: "Merriweather Sans", sans-serif;
 }
