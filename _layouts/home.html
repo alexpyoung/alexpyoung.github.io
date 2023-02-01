@@ -1,31 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-US">
     {% include head.html %}
-
     <body>
         {% include nav.html %}
-        <div class="hero">
-            <img
-                src="{{ site.photos.first }}"
-                alt="{{ site.photos.first | split:'/' | last | split:'.' | first }}"
-            />
-        </div>
-        <div class="carousel-container">
-            <div class="carousel">
-                <ul>
-                    {% for photo in site.photos %}
-                    <li onclick="onSelectImage(this)">
-                        <img
-                            src="{{ photo }}"
-                            alt="{{ photo | split:'/' | last | split:'.' | first }}"
-                            loading="lazy"
-                        />
-                    </li>
-                    {% endfor %}
-                </ul>
+        <hr />
+        <div class="about">
+            <div class="bio">
+                <img src="/assets/avatar.jpg" />
+                <p>🖖</p>
+            </div>
+            <div class="links">
+                {% for link in site.links %}
+                <a href="{{ link.href }}" target="blank">
+                    <img class="link" src="{{ link.src }}" />
+                </a>
+                {% endfor %}
             </div>
         </div>
-        <script src="/scripts/images.js" async></script>
-        <script src="/scripts/touch.js" async></script>
     </body>
 </html>
