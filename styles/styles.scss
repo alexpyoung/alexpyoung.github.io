@@ -78,10 +78,6 @@ nav {
     }
 }
 
-hr {
-    width: 50%;
-}
-
 .hero {
     height: 50vh;
     margin: 0 auto;
@@ -179,6 +175,11 @@ hr {
     flex: 1;
 }
 
+hr, .bio img {
+    width: 100%;
+    max-width: 200px;
+}
+
 .bio {
     display: flex;
     flex-direction: column;
@@ -187,13 +188,12 @@ hr {
     flex: 1;
 
     img {
-        width: 100%;
-        max-width: 200px;
         border-radius: 50%;
     }
 
-    p {
-        font-size: 2em;
+    em {
+        font-family: "Roboto Slab", serif;
+        font-size: 1em;
         text-align: center;
         padding-top: 3vh;
     }
